@@ -1,0 +1,1 @@
+{"name":"lessavio-web","version":"1.0.0","private":true,"scripts":{"dev":"node server.mjs","build":"node build.mjs","preview":"node server.mjs dist"}}
