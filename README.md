@@ -14,8 +14,14 @@ Run `npm run build` to generate `dist/`. Deploy its contents with any static hos
 - Separate `privacy.html` and `terms.html` pages.
 - Smooth anchor scrolling, progressive scroll reveals, keyboard focus and reduced-motion support.
 
-## Before public launch
+## Website analytics
 
-Legal pages are explicitly marked as drafts and `noindex`. Confirm the legal operator, dedicated private contact, jurisdiction and actual hosting/log-retention arrangements; finalize the text and remove the draft notices and noindex when approved. Current documents follow the desktop implementation and reference Firebase’s official privacy documentation.
+The Firebase implementation follows the desktop consent model: SDK loads after opt-in, ads are disabled, download clicks use an allowlisted platform parameter. Consent is independent of the desktop app. All pages offer Analytics settings. No SDK loads on localhost, or in Vercel preview builds.
+
+Set the public `WEB_FIREBASE_*` variables from `.env.example` in Vercel Production and redeploy. Never use Admin SDK keys. Missing configuration disables collection; partial configuration fails the build. Use a dedicated Firebase Web app and measurement ID. For fully separate reports, use a separate Firebase project linked to its own GA4 property. A different stream in the existing property still shares combined property reports.
+
+In the web stream, disable Enhanced Measurement to keep collection limited to the explicit page and download events; disable Google signals and choose the desired event retention in GA4 Admin. Verify consent and events in GA4 Realtime on production after configuration. Source implementation alone cannot verify ingestion.
+
+Legal pages describe Vercel hosting, optional website and desktop analytics, local records, user choices and the project contact. Update them when actual product practices change.
 
 Download links use the desktop v0.5.0 release URLs documented in the desktop repository. Update them when shipping a new version. Product visuals are illustrative HTML/CSS, not literal application screenshots.
