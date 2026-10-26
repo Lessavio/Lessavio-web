@@ -3,3 +3,13 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.js-motion .reveal:not(.visible){opacity:1;transform:none}}
 
 .analytics-settings{border:0;padding:0;background:none;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}.analytics-panel[hidden]{display:none}.analytics-panel{position:fixed;z-index:30;bottom:20px;right:20px;width:min(420px,calc(100% - 40px));padding:24px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 55px #243b3726}.analytics-panel strong{font-size:16px}.analytics-panel p{font-size:12px;color:var(--muted)}.analytics-panel a{text-decoration:underline;color:var(--green)}.analytics-panel>div{display:flex;gap:10px}.analytics-panel button{cursor:pointer;flex:1;padding:12px;border:1px solid var(--green);border-radius:7px;background:white;color:var(--green);font:inherit;font-size:12px}.analytics-panel button[data-choice="granted"]{background:var(--green);color:white}.analytics-status:empty{display:none}
+
+/* Browser access sits alongside desktop downloads, with one clear launch action. */
+.web-launch{max-width:580px;margin:30px auto 0;padding:28px;background:#ffffff94;border:1px solid #d4dfcc;border-radius:16px}
+.availability{font-size:9px;font-weight:600;letter-spacing:1.6px;color:var(--green)}
+.web-launch p{font-size:15px;color:#5e7454;margin:12px 0 19px}
+.web-launch small{display:block;font-size:10px;line-height:1.8;color:#7a8d70;margin-top:14px}
+.desktop-download-label{margin:28px 0 -12px;font-size:12px!important}
+.available-link{margin-left:auto;display:inline-flex;align-items:center;gap:9px;padding:9px 12px;border-radius:20px;background:var(--green);color:white;font-size:10px;white-space:nowrap}
+.available-link:hover{background:#245a46}
+@media(max-width:700px){.web-launch{padding:23px 18px}.web-launch .button{width:100%;justify-content:center}.coming-platforms>div{gap:12px}.available-link{padding:9px 10px;font-size:9px}.coming-platforms strong{min-width:0}.hero-actions{flex-wrap:wrap;justify-content:center}}

@@ -10,7 +10,7 @@ Run `npm run build` to generate `dist/`. Deploy its contents with any static hos
 
 ## Contents
 
-- Single-page product presentation, CSS product illustrations with fictional demo data, desktop downloads, web/mobile roadmap.
+- Single-page product presentation, CSS product illustrations with fictional demo data, desktop downloads, available web app and native mobile roadmap.
 - Separate `privacy.html` and `terms.html` pages.
 - Smooth anchor scrolling, progressive scroll reveals, keyboard focus and reduced-motion support.
 
@@ -24,4 +24,11 @@ In the web stream, disable Enhanced Measurement to keep collection limited to th
 
 Legal pages describe Vercel hosting, optional website and desktop analytics, local records, user choices and the project contact. Update them when actual product practices change.
 
-Download links use the desktop v0.5.1 release URLs documented in the desktop repository. Update them when shipping a new version. Product visuals are illustrative HTML/CSS, not literal application screenshots.
+Download links use the desktop v0.5.2 release URLs documented in the desktop repository. Update them when shipping a new version. Product visuals are illustrative HTML/CSS, not literal application screenshots.
+
+## Available applications
+
+- Web app: https://lessavio-web-app.vercel.app/ (hero, download section and platforms block).
+- Desktop: published 0.5.2 installers for universal macOS and Windows x64.
+- Native mobile: still in development; mobile browsers can use the web app.
+- Teaching data remains local to each browser/app; there is no cloud synchronization.
