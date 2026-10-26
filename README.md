@@ -32,3 +32,7 @@ Download links use the desktop v0.5.2 release URLs documented in the desktop rep
 - Desktop: published 0.5.2 installers for universal macOS and Windows x64.
 - Native mobile: still in development; mobile browsers can use the web app.
 - Teaching data remains local to each browser/app; there is no cloud synchronization.
+
+## Icons
+
+The workspace illustration and platform list use the same Lucide v0.468.0 outline icons as the application, bundled locally in `assets/icons/lucide.svg`. ISC attribution is retained in `assets/icons/LICENSE`. No icon font, CDN or client-side icon runtime is required.
